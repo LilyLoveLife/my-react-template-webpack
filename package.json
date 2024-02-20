@@ -34,12 +34,10 @@
     "eslint": "eslint ./ --fix",
     "p": "# 一键创建文件 \n plop",
     "//": "一键更新hrtps组件库",
-    "prepare": "husky install && npm config set registry http://registry.npm.hrtps.com",
-    "removeComponents": "npm remove @hrtps/antd",
-    "addComponents": "npm add @hrtps/antd --registry http://registry.npm.hrtps.com --legacy-peer-deps",
-    "updatecomponents": "npm-run-all removeComponents addComponents",
-    "addComponents:Beta": "npm add @hrtps/antd@beta --registry http://registry.npm.hrtps.com --legacy-peer-deps",
-    "updatecomponents:Beta": "npm-run-all removeComponents addComponents:Beta"
+    "prepare": "husky install && npm config set registry https://registry.npmmirror.com/",
+    "removeComponents": "npm remove antd",
+    "addComponents": "npm add antd --registry https://registry.npmmirror.com/ --legacy-peer-deps",
+    "updatecomponents": "npm-run-all removeComponents addComponents"
   },
   "eslintConfig": {
     "extends": [
